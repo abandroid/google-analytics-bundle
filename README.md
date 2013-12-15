@@ -70,6 +70,7 @@ After installation and configuration, the tracker can be rendered using the foll
     {{ google_analytics_tracker('default') }}
 
 </head>
+```
 
 ## License
 
