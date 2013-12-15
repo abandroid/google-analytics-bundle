@@ -1,0 +1,27 @@
+{
+    "name": "endroid/google-analytics-bundle",
+    "description": "Endroid Google Analytics for Symfony",
+    "keywords": ["endroid", "google", "analytics", "symfony", "bundle"],
+    "homepage": "https://github.com/endroid/EndroidGoogleAnalyticsBundle",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeroen van den Enden",
+            "email": "info@endroid.nl",
+            "homepage": "http://endroid.nl/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": { "Endroid\\Bundle\\GoogleAnalyticsBundle": "" }
+    },
+    "target-dir": "Endroid/Bundle/GoogleAnalyticsBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
