@@ -4,6 +4,8 @@ Endroid Google Analytics Bundle
 *By [endroid](http://endroid.nl/)*
 
 [![Build Status](https://secure.travis-ci.org/endroid/EndroidGoogleAnalyticsBundle.png)](http://travis-ci.org/endroid/EndroidGoogleAnalyticsBundle)
+[![Latest Stable Version](https://poser.pugx.org/endroid/google-analytics-bundle/v/stable.png)](https://packagist.org/packages/endroid/google-analytics-bundle)
+[![Total Downloads](https://poser.pugx.org/endroid/google-analytics-bundle/downloads.png)](https://packagist.org/packages/endroid/google-analytics-bundle)
 
 This bundle integrates Google Analytics in your project. It allows you to
 create one or multiple tracking codes and provides easy definition of tracking
@@ -70,7 +72,6 @@ After installation and configuration, the tracker can be rendered using the foll
     {{ google_analytics_tracker('default') }}
 
 </head>
-```
 
 ## License
 
