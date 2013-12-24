@@ -9,12 +9,25 @@
 
 namespace Endroid\Bundle\GoogleAnalyticsBundle\Twig\Extension;
 
-use Endroid\Bundle\BehaviorBundle\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAwareInterface
 {
-    use ContainerAwareTrait;
+    /**
+     * @var
+     */
+    protected $container;
+
+    /**
+     * Sets the container.
+     *
+     * @param ContainerInterface $container
+     */
+    public function setContainer(ContainerInterface $container = null)
+    {
+        $this->container = $container;
+    }
 
     public function getFunctions()
     {
