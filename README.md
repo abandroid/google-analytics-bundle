@@ -64,7 +64,6 @@ endroid_google_analytics:
 After installation and configuration, the tracker can be rendered using the following Twig syntax.
 
 ```twig
-
 <head>
 
     ...
@@ -72,6 +71,7 @@ After installation and configuration, the tracker can be rendered using the foll
     {{ google_analytics_tracker('default') }}
 
 </head>
+```
 
 ## License
 
