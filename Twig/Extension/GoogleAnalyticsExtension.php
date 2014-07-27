@@ -46,6 +46,10 @@ class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAware
     {
         $code = $this->container->getParameter('endroid_google_analytics.'.$identifier);
 
+        if (!$code) {
+            return '';
+        }
+
         return $this->container->get('templating')->render('EndroidGoogleAnalyticsBundle::tracker.html.twig', array('code' => $code));
     }
 
