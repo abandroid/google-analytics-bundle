@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAwareInterface
 {
     /**
-     * @var
+     * @var ContainerInterface
      */
     protected $container;
 
@@ -39,7 +39,7 @@ class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAware
     /**
      * Renders the tracker.
      *
-     * @param string $identifier
+     * @param  string $identifier
      * @return mixed
      */
     public function tracker($identifier = 'default')
