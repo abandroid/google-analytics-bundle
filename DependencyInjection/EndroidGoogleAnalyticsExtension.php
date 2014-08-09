@@ -27,6 +27,9 @@ class EndroidGoogleAnalyticsExtension extends Extension
                     $container->setParameter('endroid_google_analytics.'.$identifier, $code);
                 }
             }
+
+            $trackDisplayFeatures = isset($config['track_display_features'])? $config['track_display_features']:false;
+            $container->setParameter('endroid_google_analytics.track_display_features', $trackDisplayFeatures);
         }
     }
 }
