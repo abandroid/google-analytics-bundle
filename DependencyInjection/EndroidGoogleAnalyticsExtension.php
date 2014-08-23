@@ -9,6 +9,7 @@
 
 namespace Endroid\Bundle\GoogleAnalyticsBundle\DependencyInjection;
 
+use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
@@ -18,18 +19,14 @@ class EndroidGoogleAnalyticsExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
+        $processor = new Processor();
+        $config = $processor->processConfiguration(new Configuration(), $configs);
+
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        foreach ($configs as $config) {
-            if (isset($config['trackers']) && is_array($config['trackers'])) {
-                foreach ($config['trackers'] as $identifier => $code) {
-                    $container->setParameter('endroid_google_analytics.'.$identifier, $code);
-                }
-            }
-
-            $trackDisplayFeatures = isset($config['track_display_features'])? $config['track_display_features']:false;
-            $container->setParameter('endroid_google_analytics.track_display_features', $trackDisplayFeatures);
+        foreach ($config['trackers'] as $name => $tracker) {
+            $container->setParameter('endroid_google_analytics.'.$name, $tracker);
         }
     }
 }
