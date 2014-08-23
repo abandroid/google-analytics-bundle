@@ -45,12 +45,16 @@ class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAware
     public function tracker($identifier = 'default')
     {
         $code = $this->container->getParameter('endroid_google_analytics.'.$identifier);
+        $trackDisplayFeatures = $this->container->getParameter('endroid_google_analytics.track_display_features');
 
         if (!$code) {
             return '';
         }
 
-        return $this->container->get('templating')->render('EndroidGoogleAnalyticsBundle::tracker.html.twig', array('code' => $code));
+        return $this->container->get('templating')->render(
+            'EndroidGoogleAnalyticsBundle::tracker.html.twig',
+            array('code' => $code, 'track_display_features' => $trackDisplayFeatures)
+        );
     }
 
     /**
