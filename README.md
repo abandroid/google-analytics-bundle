@@ -53,15 +53,22 @@ public function registerBundles()
 
 ### config.yml
 
+Multiple trackers can be defined via the configuration. A tracker can either
+be created using the short syntax or using the long syntax (in case you want
+to change one of the optional parameters).
+
 ```yaml
 endroid_google_analytics:
     trackers:
-        default: <tracking code>
+        default: UA-XXXX-Y
+        extra: { property_id: UA-XXXX-Z, require_display_features: true }
+        
 ```
 
 ## Usage
 
-After installation and configuration, the tracker can be rendered using the following Twig syntax.
+After installation and configuration, the tracker can be rendered using the
+following Twig syntax. Multiple trackers can be included on a single page.
 
 ```twig
 <head>
@@ -69,6 +76,8 @@ After installation and configuration, the tracker can be rendered using the foll
     ...
 
     {{ google_analytics_tracker('default') }}
+    
+    {{ google_analytics_tracker('extra') }}
 
 </head>
 ```
