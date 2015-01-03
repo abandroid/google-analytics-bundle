@@ -1,5 +1,4 @@
 services:
-
     endroid_google_analytics.twig.extension:
         class: Endroid\Bundle\GoogleAnalyticsBundle\Twig\Extension\GoogleAnalyticsExtension
         calls:
