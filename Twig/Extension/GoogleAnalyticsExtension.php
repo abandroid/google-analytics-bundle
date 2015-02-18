@@ -44,7 +44,8 @@ class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAware
     /**
      * Renders the tracker.
      *
-     * @param  string $name
+     * @param string $name
+     *
      * @return mixed
      */
     public function tracker($name = 'default')
