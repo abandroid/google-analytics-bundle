@@ -15,26 +15,13 @@ script in you templates.
 
 ## Installation
 
-### Add in your composer.json
-
-```js
-{
-    "require": {
-        "endroid/google-analytics-bundle": "dev-master"
-    }
-}
-```
-
-### Install the bundle
+Use [Composer](https://getcomposer.org/) to install the bundle.
 
 ``` bash
-$ curl -s http://getcomposer.org/installer | php
-$ php composer.phar update endroid/google-analytics-bundle
+$ composer require endroid/google-analytics-bundle
 ```
 
-Composer will install the bundle to your project's `vendor/endroid` directory.
-
-### Enable the bundle via the kernel
+Then enable the bundle via the kernel.
 
 ``` php
 <?php
