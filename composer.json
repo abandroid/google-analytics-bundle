@@ -16,9 +16,10 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "psr-0": { "Endroid\\Bundle\\GoogleAnalyticsBundle": "" }
+        "psr-4": {
+          "Endroid\\Bundle\\GoogleAnalyticsBundle": ""
+        }
     },
-    "target-dir": "Endroid/Bundle/GoogleAnalyticsBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "1.x-dev"
