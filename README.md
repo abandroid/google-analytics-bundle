@@ -1,5 +1,5 @@
-Endroid Google Analytics Bundle
-===============================
+Google Analytics Bundle
+=======================
 
 *By [endroid](http://endroid.nl/)*
 
