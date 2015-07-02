@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-          "Endroid\\Bundle\\GoogleAnalyticsBundle\\": ""
+            "Endroid\\Bundle\\GoogleAnalyticsBundle\\": [ "src/", "tests/" ]
         }
     },
     "config": {

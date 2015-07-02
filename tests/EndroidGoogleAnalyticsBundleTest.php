@@ -7,9 +7,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Endroid\Bundle\GoogleAnalyticsBundle\Tests\DependencyInjection;
+namespace Endroid\Bundle\BehaviorBundle;
 
-class GoogleAnalyticsExtensionTest extends \PHPUnit_Framework_TestCase
+use PHPUnit_Framework_TestCase;
+
+class EndroidGoogleAnalyticsBundleTest extends PHPUnit_Framework_TestCase
 {
     public function testNoTestsYet()
     {
