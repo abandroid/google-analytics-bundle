@@ -11,6 +11,6 @@ namespace Endroid\Bundle\GoogleAnalyticsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class EndroidGoogleAnalyticsBundle extends Bundle
+class GoogleAnalyticsBundle extends Bundle
 {
 }

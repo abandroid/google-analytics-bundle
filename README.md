@@ -3,7 +3,7 @@ Google Analytics Bundle
 
 *By [endroid](http://endroid.nl/)*
 
-[![Build Status](https://secure.travis-ci.org/endroid/EndroidGoogleAnalyticsBundle.png)](http://travis-ci.org/endroid/EndroidGoogleAnalyticsBundle)
+[![Build Status](https://secure.travis-ci.org/endroid/GoogleAnalyticsBundle.png)](http://travis-ci.org/endroid/GoogleAnalyticsBundle)
 [![Latest Stable Version](https://poser.pugx.org/endroid/google-analytics-bundle/v/stable.png)](https://packagist.org/packages/endroid/google-analytics-bundle)
 [![Total Downloads](https://poser.pugx.org/endroid/google-analytics-bundle/downloads.png)](https://packagist.org/packages/endroid/google-analytics-bundle)
 
@@ -11,7 +11,7 @@ This bundle integrates Google Analytics in your project. It allows you to
 create one or multiple tracking codes and provides easy definition of tracking
 script in you templates.
 
-[![knpbundles.com](http://knpbundles.com/endroid/EndroidGoogleAnalyticsBundle/badge-short)](http://knpbundles.com/endroid/EndroidGoogleAnalyticsBundle)
+[![knpbundles.com](http://knpbundles.com/endroid/GoogleAnalyticsBundle/badge-short)](http://knpbundles.com/endroid/GoogleAnalyticsBundle)
 
 ## Installation
 
@@ -31,7 +31,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Endroid\Bundle\GoogleAnalyticsBundle\EndroidGoogleAnalyticsBundle(),
+        new Endroid\Bundle\GoogleAnalyticsBundle\GoogleAnalyticsBundle(),
     );
 }
 ```

@@ -2,7 +2,7 @@
     "name": "endroid/google-analytics-bundle",
     "description": "Endroid Google Analytics for Symfony",
     "keywords": ["endroid", "google", "analytics", "symfony", "bundle"],
-    "homepage": "https://github.com/endroid/EndroidGoogleAnalyticsBundle",
+    "homepage": "https://github.com/endroid/GoogleAnalyticsBundle",
     "type": "library",
     "license": "MIT",
     "authors": [

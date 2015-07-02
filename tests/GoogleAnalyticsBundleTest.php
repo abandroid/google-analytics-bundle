@@ -11,7 +11,7 @@ namespace Endroid\Bundle\BehaviorBundle;
 
 use PHPUnit_Framework_TestCase;
 
-class EndroidGoogleAnalyticsBundleTest extends PHPUnit_Framework_TestCase
+class GoogleAnalyticsBundleTest extends PHPUnit_Framework_TestCase
 {
     public function testNoTestsYet()
     {
