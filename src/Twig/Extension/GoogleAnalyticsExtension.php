@@ -59,7 +59,7 @@ class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAware
         $tracker = $this->container->getParameter($key);
         $tracker['name'] = $name;
 
-        $html = $this->container->get('templating')->render('GoogleAnalyticsBundle::tracker.html.twig', array('tracker' => $tracker, 'loadGa' => $this->firstTracker));
+        $html = $this->container->get('templating')->render('EndroidGoogleAnalyticsBundle::tracker.html.twig', array('tracker' => $tracker, 'loadGa' => $this->firstTracker));
 
         $this->firstTracker = false;
 
