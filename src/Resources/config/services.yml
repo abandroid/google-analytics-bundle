@@ -2,6 +2,6 @@ services:
     endroid_google_analytics.twig.extension:
         class: Endroid\Bundle\GoogleAnalyticsBundle\Twig\Extension\GoogleAnalyticsExtension
         calls:
-            - [ setContainer, [ @service_container ] ]
+            - [ setContainer, [ '@service_container' ] ]
         tags:
             - { name: twig.extension }
