@@ -47,7 +47,7 @@ to change one of the optional parameters).
 ```yaml
 endroid_google_analytics:
     trackers:
-        main: UA-XXXX-Y
+        default: UA-XXXX-Y
         another: { property_id: UA-XXXX-Z, require_display_features: true }
         
 ```
