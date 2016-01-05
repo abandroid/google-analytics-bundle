@@ -41,8 +41,8 @@ public function registerBundles()
 ### config.yml
 
 Multiple trackers can be defined via the configuration. A tracker can either
-be created using the short syntax or using the long syntax (in case you want
-to change one of the optional parameters).
+be created using the short syntax or using the long syntax in case you want
+to change one of the optional parameters.
 
 ```yaml
 endroid_google_analytics:
