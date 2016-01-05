@@ -47,26 +47,23 @@ to change one of the optional parameters).
 ```yaml
 endroid_google_analytics:
     trackers:
-        default: UA-XXXX-Y
-        extra: { property_id: UA-XXXX-Z, require_display_features: true }
+        main: UA-XXXX-Y
+        another: { property_id: UA-XXXX-Z, require_display_features: true }
         
 ```
 
 ## Usage
 
 After installation and configuration, the tracker can be rendered using the
-following Twig syntax. Multiple trackers can be included on a single page.
+following Twig syntax.
 
 ```twig
-<head>
-
+<html>
+    <head>
+        ...
+        {{ google_analytics_tracker('default') }}
+    </head>
     ...
-
-    {{ google_analytics_tracker('default') }}
-    
-    {{ google_analytics_tracker('extra') }}
-
-</head>
 ```
 
 ## Versioning
