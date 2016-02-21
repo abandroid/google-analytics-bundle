@@ -11,8 +11,10 @@ namespace Endroid\Bundle\GoogleAnalyticsBundle\Twig\Extension;
 
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Twig_Extension;
+use Twig_SimpleFunction;
 
-class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAwareInterface
+class GoogleAnalyticsExtension extends Twig_Extension implements ContainerAwareInterface
 {
     /**
      * @var ContainerInterface
@@ -34,10 +36,13 @@ class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAware
         $this->container = $container;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function getFunctions()
     {
         return array(
-            'google_analytics_tracker' => new \Twig_Function_Method($this, 'tracker', array('is_safe' => array('html'))),
+            new Twig_SimpleFunction('google_analytics_tracker', array($this, 'tracker'), array('is_safe' => array('html'))),
         );
     }
 
@@ -67,7 +72,7 @@ class GoogleAnalyticsExtension extends \Twig_Extension implements ContainerAware
     }
 
     /**
-     * @return string
+     * {@inheritdoc}
      */
     public function getName()
     {
