@@ -3,9 +3,11 @@ Google Analytics Bundle
 
 *By [endroid](http://endroid.nl/)*
 
+[![Latest Stable Version](http://img.shields.io/packagist/v/endroid/google-analytics-bundle.svg)](https://packagist.org/packages/endroid/google-analytics-bundle)
 [![Build Status](https://secure.travis-ci.org/endroid/EndroidGoogleAnalyticsBundle.png)](http://travis-ci.org/endroid/EndroidGoogleAnalyticsBundle)
-[![Latest Stable Version](https://poser.pugx.org/endroid/google-analytics-bundle/v/stable.png)](https://packagist.org/packages/endroid/google-analytics-bundle)
-[![Total Downloads](https://poser.pugx.org/endroid/google-analytics-bundle/downloads.png)](https://packagist.org/packages/endroid/google-analytics-bundle)
+[![Total Downloads](http://img.shields.io/packagist/dt/endroid/google-analytics-bundle.svg)](https://packagist.org/packages/endroid/google-analytics-bundle)
+[![Monthly Downloads](http://img.shields.io/packagist/dm/endroid/google-analytics-bundle.svg)](https://packagist.org/packages/endroid/google-analytics-bundle)
+[![License](http://img.shields.io/packagist/l/endroid/google-analytics-bundle.svg)](https://packagist.org/packages/endroid/google-analytics-bundle)
 
 This bundle integrates Google Analytics in your project. It allows you to
 create one or multiple tracking codes and provides easy definition of tracking
@@ -68,9 +70,9 @@ following Twig syntax.
 
 ## Versioning
 
-Version numbers follow the MAJOR.MINOR.PATCH scheme. Backwards compatible
-changes will be kept to a minimum but be aware that these can occur. Lock
-your dependencies for production and test your code when upgrading.
+Version numbers follow the MAJOR.MINOR.PATCH scheme. Backwards compatibility
+breaking changes will be kept to a minimum but be aware that these can occur.
+Lock your dependencies for production and test your code when upgrading.
 
 ## License
 
