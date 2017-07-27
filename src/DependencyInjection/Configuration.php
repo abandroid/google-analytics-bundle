@@ -28,7 +28,9 @@ class Configuration implements ConfigurationInterface
                         ->prototype('array')
                             ->beforeNormalization()
                                 ->ifString()
-                                ->then(function ($property_id) { return array('property_id' => $property_id); })
+                                ->then(function ($property_id) {
+                                    return array('property_id' => $property_id);
+                                })
                             ->end()
                             ->children()
                                 ->scalarNode('property_id')->isRequired()->end()
